@@ -5,8 +5,8 @@ public class DeadLockTest
 
 	public static void main(String[] args)
 	{
-		String str1 = "dfgfd";
-		String str2 = "fdgfg";
+		String str1 = "Sample String 1";
+		String str2 = "Sample String 2";
 		new Thread(new Thread1(str1, str2)).start();
 		new Thread(new Thread2(str1, str2)).start();
 	}
